@@ -33,17 +33,27 @@ function Login() {
         axios.get(url).then(Response => {
             userdata = Response.data
 
-            const loginemail = user.email.toLowerCase()
-            const loginpassword = user.password.toLowerCase()
-
 
             if (user.email === "" && user.password === "") {
 
                 alert('please fill all the field')
             } else {
-                if (loginemail.email === userdata.email && loginpassword.password === userdata.password) {
+                // const { email, password } = userdata[]
+
+                const foundUser = userdata.find(
+                    (userData) =>
+                        userData.email === user.email && userData.password === user.password
+                );
+
+                console.log({ user, userdata })
+                if (user.email === foundUser.email && user.password === foundUser.password) {
                     console.log("login is ongoing");
-                    navigate('/dashboard')
+                    if (!error.email && !error.password) {
+                        navigate('/dashboard')
+
+                    } else {
+                        alert('Please enter valid credentials');
+                    }
 
 
                 } else {
@@ -93,7 +103,8 @@ function Login() {
 
                                     </div>
 
-                                    <button type="submit" className="btn btn-primary">Register</button>
+                                    <button type="submit" className="btn btn-primary">Login
+                                    </button>
                                     <div className="mt-4">
                                         <p onClick={gotoforgot} className='text-danger forgot-p d-inline-block'>Forgot Password ?</p>
 

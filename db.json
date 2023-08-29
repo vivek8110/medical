@@ -1,51 +1,18 @@
 {
   "users": [
     {
-      "id": 1,
       "uname": "vivek",
-      "email": "vivek06@gmail.com"
+      "email": "vivek@gmail.com",
+      "password": "Vivek@123",
+      "conp": "Vivek@123",
+      "id": 1
     },
     {
-      "uname": "ankit",
-      "email": "ankit@gmail.com",
-      "password": "Ankit@123",
-      "conp": "Ankit@123",
+      "uname": "anurag",
+      "email": "anu@gmail.com",
+      "password": "Anu@12345",
+      "conp": "Anu@12345",
       "id": 2
-    },
-    {
-      "uname": "bittu",
-      "email": "bittu@gmail.com",
-      "password": "Bittu@123",
-      "conp": "Bittu@123",
-      "id": 3
-    },
-    {
-      "uname": "pradip",
-      "email": "pradip@gmail.com",
-      "password": "Pradip@123",
-      "conp": "Pradip@123",
-      "id": 4
-    },
-    {
-      "uname": "petho",
-      "email": "petho@gmail.com",
-      "password": "Petho@123",
-      "conp": "Petho@123",
-      "id": 5
-    },
-    {
-      "uname": "pratik",
-      "email": "bittu@gmail.com",
-      "password": "Pratik@123",
-      "conp": "Pratik@123",
-      "id": 6
-    },
-    {
-      "uname": "gandhi",
-      "email": "gandhi@gmail.com",
-      "password": "Gandhi@123",
-      "conp": "Gandhi@123",
-      "id": 7
     }
   ]
 }
